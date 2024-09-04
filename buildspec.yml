@@ -8,7 +8,7 @@ phases:
     build:
         commands:
             - echo Building Docker Images
-            - docker build -t teo-counter-new
+            - docker build -t teo-counter-new .
             - docker tag teo-counter-new:latest 022499048865.dkr.ecr.eu-west-2.amazonaws.com/teo-counter-new:latest
     post_build:
         commands:
